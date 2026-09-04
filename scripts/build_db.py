@@ -1,6 +1,7 @@
-"""Build SQLite database from official SN-2012 (01.07.2026) PDFs."""
+"""Build a SQLite database from the official SN-2012 chapter PDFs."""
 from __future__ import annotations
 
+import argparse
 import json
 import re
 import sqlite3
@@ -9,10 +10,10 @@ from pathlib import Path
 
 import fitz
 
-ROOT = Path(__file__).resolve().parents[1]
-PDF_DIR = ROOT / "data" / "raw" / "pdf"
-MANIFEST = ROOT / "data" / "raw" / "manifest.json"
-DB_PATH = ROOT / "data" / "sn2012_2026.sqlite"
+import mosru
+
+ROOT = mosru.ROOT
+MIN_RATES = 20000
 
 RATE_CODE = re.compile(r"^\d{1,2}-\d{4}-\d+-\d+(?:/\d+)?$")
 RES_CODE = re.compile(r"^\d+\.\d+(?:-\d+)+$")
@@ -484,12 +485,22 @@ def init_db(conn: sqlite3.Connection) -> None:
     )
 
 
-def main() -> None:
-    manifest = json.loads(MANIFEST.read_text(encoding="utf-8"))
-    DB_PATH.parent.mkdir(parents=True, exist_ok=True)
-    if DB_PATH.exists():
-        DB_PATH.unlink()
-    conn = sqlite3.connect(DB_PATH)
+def main() -> int:
+    mosru.use_utf8_stdout()
+    parser = argparse.ArgumentParser(description="Собрать SQLite из PDF сборника СН-2012")
+    parser.add_argument("--manifest", type=Path, default=mosru.MANIFEST)
+    parser.add_argument("--pdf-dir", type=Path, default=mosru.PDF_DIR)
+    parser.add_argument("--out", type=Path, help="Куда писать базу (по умолчанию data/db/sn2012_<дата>.sqlite)")
+    args = parser.parse_args()
+
+    manifest = json.loads(args.manifest.read_text(encoding="utf-8"))
+    price_level = manifest.get("price_level") or "01.01.1970"
+    db_path = args.out or mosru.db_path_for(price_level)
+    tmp_path = db_path.with_suffix(".sqlite.tmp")
+    db_path.parent.mkdir(parents=True, exist_ok=True)
+    tmp_path.unlink(missing_ok=True)
+    print(f"Сборка базы для уровня цен {price_level} → {db_path.name}")
+    conn = sqlite3.connect(tmp_path)
     init_db(conn)
     conn.execute("INSERT INTO meta(key,value) VALUES(?,?)", ("title", manifest.get("title")))
     conn.execute("INSERT INTO meta(key,value) VALUES(?,?)", ("source_page", manifest.get("source_page")))
@@ -521,7 +532,7 @@ def main() -> None:
             ),
         )
         doc_id = cur.lastrowid
-        path = ROOT / item["rel_path"]
+        path = args.pdf_dir / filename
         if not path.exists():
             stats.append(f"MISSING {filename}")
             continue
@@ -646,9 +657,20 @@ def main() -> None:
     conn.execute("INSERT INTO meta(key,value) VALUES(?,?)", ("counts", json.dumps(counts, ensure_ascii=False)))
     conn.commit()
     conn.close()
-    (ROOT / "data" / "parse_stats.txt").write_text("\n".join(stats) + "\n" + json.dumps(counts, ensure_ascii=False, indent=2), encoding="utf-8")
-    print("DB", DB_PATH, counts)
+
+    mosru.REPORTS.mkdir(parents=True, exist_ok=True)
+    (mosru.REPORTS / "parse_stats.txt").write_text(
+        "\n".join(stats) + "\n" + json.dumps(counts, ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
+    if counts["rates"] < MIN_RATES:
+        print(f"Разобрано только {counts['rates']} расценок (ожидалось ≥ {MIN_RATES}). База не заменена.")
+        return 2
+    tmp_path.replace(db_path)
+    print(f"База готова: {db_path}")
+    print(json.dumps(counts, ensure_ascii=False, indent=2))
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

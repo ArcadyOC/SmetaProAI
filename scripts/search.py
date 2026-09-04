@@ -1,15 +1,20 @@
-"""Search SN-2012 01.07.2026 SQLite database."""
+"""Search the SN-2012 SQLite database (newest built release by default)."""
 from __future__ import annotations
 
 import argparse
 import sqlite3
 from pathlib import Path
 
-DB = Path(__file__).resolve().parents[1] / "data" / "sn2012_2026.sqlite"
+import mosru
 
 
-def connect() -> sqlite3.Connection:
-    conn = sqlite3.connect(DB)
+def newest_db() -> Path | None:
+    candidates = sorted(mosru.DB_DIR.glob("sn2012_*.sqlite"))
+    return candidates[-1] if candidates else None
+
+
+def connect(db: Path) -> sqlite3.Connection:
+    conn = sqlite3.connect(db)
     conn.row_factory = sqlite3.Row
     return conn
 
@@ -96,20 +101,31 @@ def search_machines(conn: sqlite3.Connection, query: str, limit: int) -> None:
         )
 
 
-def main() -> None:
-    parser = argparse.ArgumentParser(description="Поиск по базе СН-2012 на 01.07.2026")
+def main() -> int:
+    mosru.use_utf8_stdout()
+    parser = argparse.ArgumentParser(description="Поиск по базе СН-2012")
     parser.add_argument("query")
     parser.add_argument("--kind", choices=["rates", "materials", "machines", "all"], default="rates")
     parser.add_argument("--limit", type=int, default=20)
+    parser.add_argument("--db", type=Path, help="Конкретная база (по умолчанию самая свежая в data/db)")
     args = parser.parse_args()
-    conn = connect()
+
+    db = args.db or newest_db()
+    if db is None or not db.exists():
+        print("Базы нет. Соберите её: python scripts/build_db.py")
+        return 2
+
+    conn = connect(db)
+    level = conn.execute("SELECT value FROM meta WHERE key='price_level'").fetchone()
+    print(f"База: {db.name} (уровень цен {level[0] if level else '?'})\n")
     if args.kind in {"rates", "all"}:
         search_rates(conn, args.query, args.limit)
     if args.kind in {"materials", "all"}:
         search_materials(conn, args.query, args.limit)
     if args.kind in {"machines", "all"}:
         search_machines(conn, args.query, args.limit)
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

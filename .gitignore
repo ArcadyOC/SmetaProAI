@@ -2,9 +2,13 @@
 __pycache__/
 *.pyc
 .DS_Store
-data/raw/_sample*
-data/raw/_sn22*
-data/raw/_probe*
+
+# Собранные базы: публикуются в GitHub Releases, в git не хранятся
+data/db/
+*.sqlite
 *.sqlite-journal
 *.sqlite-wal
 *.sqlite-shm
+
+# Прошлые кварталы держим только локально
+data/archive/

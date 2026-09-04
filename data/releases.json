@@ -1,0 +1,16 @@
+{
+  "current": "01.07.2026",
+  "releases": [
+    {
+      "price_level": "01.07.2026",
+      "document_id": 344770220,
+      "order_document_id": 344769220,
+      "order": "Распоряжение ДЭПР № ДПР-Р-15/26",
+      "date_published": "2026-06-29 16:35:00",
+      "files": 97,
+      "bytes": 274267074,
+      "manifest_sha256": "65d1e9adf98a9b4d23dcdfae588032a5052f481388e50250330628582bd990bf",
+      "downloaded_at": "2026-09-04T18:32:46"
+    }
+  ]
+}
