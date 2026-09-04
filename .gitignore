@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+data/raw/_sample*
+data/raw/_sn22*
+data/raw/_probe*
+*.sqlite-journal
+*.sqlite-wal
+*.sqlite-shm

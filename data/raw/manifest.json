@@ -1,0 +1,981 @@
+{
+  "source_page": "https://www.mos.ru/depr/documents/cenovaya-politika/cenoobrazovanie-v-gorodskom-khozyaistve/cenoobrazovanie-v-gorodskom-khozyaistve-2026-god/view/344770220/",
+  "source_api": "https://www.mos.ru/api/documents/v2/frontend/json/ru/documents/344770220",
+  "title": "Сборник СН-⁠2012 в текущих ценах по состоянию на 01.07.2026",
+  "date_published": "2026-06-29 16:35:00",
+  "price_level": "01.07.2026",
+  "order": "Распоряжение ДЭПР от 25.06.2026 № ДПР-Р-15/26",
+  "downloaded_at": "2026-09-04T17:29:15",
+  "files": [
+    {
+      "filename": "OP.pdf",
+      "title": "Общие положения по применению Сборника стоимостных нормативов по эксплуатации зданий и сооружений, содержанию объектов культурного наследия, праздничному и тематическому оформлению (СН-2012)",
+      "url": "https://www.mos.ru/upload/documents/files/62141893369f9676b58b93ed594b3077/OP.pdf",
+      "rel_path": "data/raw/pdf/OP.pdf",
+      "chapter": "Общие положения",
+      "bytes": 667285,
+      "sha256": "63494af7b3d988573e2323fc5faf49240a1c354dc1ad21bd8e7ce221f4d38b7f",
+      "ok": true
+    },
+    {
+      "filename": "Rasporyajenieot25062026_DPR-R-15_26_.pdf",
+      "title": "Распоряжение Департамента экономической политики и развития города Москвы от 25.06.2026 № ДПР-⁠Р-⁠15/26 «Об утверждении Сборника стоимостных нормативов по эксплуатации зданий и сооружений, содержанию объектов культурного наследия, праздничному и тематическому оформлению города Москвы (СН-⁠2012) в текущих ценах по состоянию на 01.07.2026»",
+      "url": "https://www.mos.ru/upload/documents/files/7280/Rasporyajenieot25062026_DPR-R-15_26_.pdf",
+      "rel_path": "data/raw/pdf/Rasporyajenieot25062026_DPR-R-15_26_.pdf",
+      "chapter": "Распоряжение",
+      "bytes": 210125,
+      "sha256": "e2bc1ade00eaacc75efd2dc201784c6e3278b09cefd9dd62786e1e7f4bc2c4e1",
+      "ok": true
+    },
+    {
+      "filename": "SN_gl1_sb1.pdf",
+      "title": "СН-2012.1.1. Сборник 1. Земляные работы",
+      "url": "https://www.mos.ru/upload/documents/files/428091e3bf1bac443df136b5cbdfb11f/SN_gl1_sb1.pdf",
+      "rel_path": "data/raw/pdf/SN_gl1_sb1.pdf",
+      "chapter": "Глава 1, сборник 1",
+      "bytes": 686192,
+      "sha256": "91cf3777dcdbe11ef8c11f093bd14e95f36f8916e9d6051f7752769650fd8ad0",
+      "ok": true
+    },
+    {
+      "filename": "SN_gl1_sb10.pdf",
+      "title": "СН-2012.1-10. Сборник 10. Полы",
+      "url": "https://www.mos.ru/upload/documents/files/8fe6ef25f40d1b63075e8bd05d963dda/SN_gl1_sb10.pdf",
+      "rel_path": "data/raw/pdf/SN_gl1_sb10.pdf",
+      "chapter": "Глава 1, сборник 10",
+      "bytes": 3117617,
+      "sha256": "3cf8544cb16b9b046cfd3084c24f3277e2fdd78a1986255905e2dde994dd3646",
+      "ok": true
+    },
+    {
+      "filename": "SN_gl1_sb11.pdf",
+      "title": "СН-2012.1-11. Сборник 11. Проемы",
+      "url": "https://www.mos.ru/upload/documents/files/2b007db707001730279555ad670c4b29/SN_gl1_sb11.pdf",
+      "rel_path": "data/raw/pdf/SN_gl1_sb11.pdf",
+      "chapter": "Глава 1, сборник 11",
+      "bytes": 3503070,
+      "sha256": "00af98cf8fc3926d0e95d8020c3cdd62e69bc8dd4588a2cf2ff47c633e003dc1",
+      "ok": true
+    },
+    {
+      "filename": "SN_gl1_sb12.pdf",
+      "title": "СН-2012.1-12. Сборник 12. Печи",
+      "url": "https://www.mos.ru/upload/documents/files/37140efd431837254d3a3d4ba20e9e60/SN_gl1_sb12.pdf",
+      "rel_path": "data/raw/pdf/SN_gl1_sb12.pdf",
+      "chapter": "Глава 1, сборник 12",
+      "bytes": 1116924,
+      "sha256": "e435b77464df097173dbd2d3b7a498ead923436a3d2abfa9b10e6055141e71b9",
+      "ok": true
+    },
+    {
+      "filename": "SN_gl1_sb13.pdf",
+      "title": "СН-2012.1-13. Сборник 13. Внутренняя отделка",
+      "url": "https://www.mos.ru/upload/documents/files/c2678ae809b4bc694d53a3535ca62b87/SN_gl1_sb13.pdf",
+      "rel_path": "data/raw/pdf/SN_gl1_sb13.pdf",
+      "chapter": "Глава 1, сборник 13",
+      "bytes": 20401219,
+      "sha256": "33bcf5f22d18b0a7e66db161461052062757e906d47b5a3868be9f2b13eb8d0a",
+      "ok": true
+    },
+    {
+      "filename": "SN_gl1_sb14.pdf",
+      "title": "СН-2012.1-14. Сборник 14. Наружная отделка",
+      "url": "https://www.mos.ru/upload/documents/files/08d00a1b250a48b1ad70237c6a218c96/SN_gl1_sb14.pdf",
+      "rel_path": "data/raw/pdf/SN_gl1_sb14.pdf",
+      "chapter": "Глава 1, сборник 14",
+      "bytes": 6902872,
+      "sha256": "dfb57a6abbd55957c29712d75a933a2eebf26d3974579abd433b070eb18cb127",
+      "ok": true
+    },
+    {
+      "filename": "SN_gl1_sb15.pdf",
+      "title": "СН-2012.1-15. Сборник 15. Водопровод хозяйственно-питьевой, противопожарный, горячее водоснабжение",
+      "url": "https://www.mos.ru/upload/documents/files/ed9530b05a9b59cc7c9131cf929642de/SN_gl1_sb15.pdf",
+      "rel_path": "data/raw/pdf/SN_gl1_sb15.pdf",
+      "chapter": "Глава 1, сборник 15",
+      "bytes": 3402843,
+      "sha256": "f966d0892e55fb94b3a61247995891c8dd268d96170a572b1bfc4bb3930c3274",
+      "ok": true
+    },
+    {
+      "filename": "SN_gl1_sb16.pdf",
+      "title": "СН-2012.1-16. Сборник 16. Канализация и внутренние водостоки",
+      "url": "https://www.mos.ru/upload/documents/files/dab2215e845142894b3f8a94f0c49834/SN_gl1_sb16.pdf",
+      "rel_path": "data/raw/pdf/SN_gl1_sb16.pdf",
+      "chapter": "Глава 1, сборник 16",
+      "bytes": 2005214,
+      "sha256": "deb6017a777f863237c94ba8450c03ef3ef7e29a8777761bd1b0155714db5c85",
+      "ok": true
+    },
+    {
+      "filename": "SN_gl1_sb17.pdf",
+      "title": "СН-2012.1-17. Сборник 17. Отопление",
+      "url": "https://www.mos.ru/upload/documents/files/9f37af7241b1733e4b846d92833ca24b/SN_gl1_sb17.pdf",
+      "rel_path": "data/raw/pdf/SN_gl1_sb17.pdf",
+      "chapter": "Глава 1, сборник 17",
+      "bytes": 3923390,
+      "sha256": "41789dfdf59f7767fab4760cc4ee74cc26ef588870120a06df59e4d5a5bc51e0",
+      "ok": true
+    },
+    {
+      "filename": "SN_gl1_sb18.pdf",
+      "title": "СН-2012.1-18. Сборник 18. Вентиляция и кондиционирование воздуха",
+      "url": "https://www.mos.ru/upload/documents/files/7019c3c559842f50fe5f6177b84c08f8/SN_gl1_sb18.pdf",
+      "rel_path": "data/raw/pdf/SN_gl1_sb18.pdf",
+      "chapter": "Глава 1, сборник 18",
+      "bytes": 10158357,
+      "sha256": "02dfde4c4cc7e140a4209bf1ca8f7df4fb598609a67032eb2d188d3adc6aaf4b",
+      "ok": true
+    },
+    {
+      "filename": "SN_gl1_sb19.pdf",
+      "title": "СН-2012.1-19. Сборник 19. Газоснабжение — внутренние устройства",
+      "url": "https://www.mos.ru/upload/documents/files/40148bcb2a26b66db2a0e1366b22c891/SN_gl1_sb19.pdf",
+      "rel_path": "data/raw/pdf/SN_gl1_sb19.pdf",
+      "chapter": "Глава 1, сборник 19",
+      "bytes": 1100920,
+      "sha256": "ca9d618517948588b1bf915972954d4bd86877e96cb07e5d60faa1901bc4aa63",
+      "ok": true
+    },
+    {
+      "filename": "SN_gl1_sb2.pdf",
+      "title": "СН-2012.1-2. Сборник 2. Фундаменты и стены подвалов",
+      "url": "https://www.mos.ru/upload/documents/files/ea1a79670d2bead58d03c0656602c5d9/SN_gl1_sb2.pdf",
+      "rel_path": "data/raw/pdf/SN_gl1_sb2.pdf",
+      "chapter": "Глава 1, сборник 2",
+      "bytes": 1588093,
+      "sha256": "26abe36623a1f9aec39809d8b7f876ae26865feb9b3256b9b100331e593646e5",
+      "ok": true
+    },
+    {
+      "filename": "SN_gl1_sb20.pdf",
+      "title": "СН-2012.1-20. Сборник 20. Электроосвещение и осветительные приборы",
+      "url": "https://www.mos.ru/upload/documents/files/429efc2fbdacd717580311097c9688e2/SN_gl1_sb20.pdf",
+      "rel_path": "data/raw/pdf/SN_gl1_sb20.pdf",
+      "chapter": "Глава 1, сборник 20",
+      "bytes": 2389273,
+      "sha256": "4540f17e4411ff4cc244af9dc023b57ce15799f806d61e7042aed84f9104cbf2",
+      "ok": true
+    },
+    {
+      "filename": "SN_gl1_sb21.pdf",
+      "title": "СН-2012.1-21. Сборник 21. Силовое электрооборудование",
+      "url": "https://www.mos.ru/upload/documents/files/bc39cd59cef9b4934c7c82eb769cdc52/SN_gl1_sb21.pdf",
+      "rel_path": "data/raw/pdf/SN_gl1_sb21.pdf",
+      "chapter": "Глава 1, сборник 21",
+      "bytes": 11339110,
+      "sha256": "d531e7f19fffd9183f41790891c0a790909f4043f4ce386fff4691f7a7c983d9",
+      "ok": true
+    },
+    {
+      "filename": "SN_gl1_sb22.pdf",
+      "title": "СН-2012.1-22. Сборник 22. Сети связи и сигнализации",
+      "url": "https://www.mos.ru/upload/documents/files/10d14654b15f3c043f04dd4fea76a09f/SN_gl1_sb22.pdf",
+      "rel_path": "data/raw/pdf/SN_gl1_sb22.pdf",
+      "chapter": "Глава 1, сборник 22",
+      "bytes": 6060620,
+      "sha256": "037496a1775dc7558ac33c6dd1a9fe6d99d20b7053a3697d3760527a103c49ba",
+      "ok": true
+    },
+    {
+      "filename": "SN_gl1_sb23.pdf",
+      "title": "СН-2012.1-23. Сборник 23. КИП и автоматика",
+      "url": "https://www.mos.ru/upload/documents/files/e4dc018f5791df781186fbe6cdb4e296/SN_gl1_sb23.pdf",
+      "rel_path": "data/raw/pdf/SN_gl1_sb23.pdf",
+      "chapter": "Глава 1, сборник 23",
+      "bytes": 4016766,
+      "sha256": "464c15f34c63bb4e988c27ea2a62dfc165698014cf3dd57fe25bfb26ef8aec6d",
+      "ok": true
+    },
+    {
+      "filename": "SN_gl1_sb24.pdf",
+      "title": "СН-2012.1-24. Сборник 24. Технологическое оборудование и трубопроводы",
+      "url": "https://www.mos.ru/upload/documents/files/b1313df12c9230ba98733584d61ca101/SN_gl1_sb24.pdf",
+      "rel_path": "data/raw/pdf/SN_gl1_sb24.pdf",
+      "chapter": "Глава 1, сборник 24",
+      "bytes": 6684471,
+      "sha256": "13c95a7a0ece9882c402a409c45ab1d2307445eee1f097f6e99eecc575855acd",
+      "ok": true
+    },
+    {
+      "filename": "SN_gl1_sb25.pdf",
+      "title": "СН-2012.1-25. Сборник 25. Подъемно-транспортное оборудование",
+      "url": "https://www.mos.ru/upload/documents/files/b4ead83f023f307ea29b73b857abd835/SN_gl1_sb25.pdf",
+      "rel_path": "data/raw/pdf/SN_gl1_sb25.pdf",
+      "chapter": "Глава 1, сборник 25",
+      "bytes": 9390969,
+      "sha256": "1a84db5b41524db9e1708a7c32c10377ae305754e0205427101cff5ce2156b69",
+      "ok": true
+    },
+    {
+      "filename": "SN_gl1_sb26.pdf",
+      "title": "СН-2012.1-26. Сборник 26. Мебель, предметы интерьера",
+      "url": "https://www.mos.ru/upload/documents/files/d7e23f8b9b6f7ddc3748171468c96afc/SN_gl1_sb26.pdf",
+      "rel_path": "data/raw/pdf/SN_gl1_sb26.pdf",
+      "chapter": "Глава 1, сборник 26",
+      "bytes": 4952148,
+      "sha256": "97863eb6eeccac21abb0de25b82562e6f966396f8906b80b7cc0ab0e1de437c4",
+      "ok": true
+    },
+    {
+      "filename": "SN_gl1_sb27.pdf",
+      "title": "СН-2012.1-27. Сборник 27. Оргтехника",
+      "url": "https://www.mos.ru/upload/documents/files/0eccfed2794bd89513db3421178b84ef/SN_gl1_sb27.pdf",
+      "rel_path": "data/raw/pdf/SN_gl1_sb27.pdf",
+      "chapter": "Глава 1, сборник 27",
+      "bytes": 721495,
+      "sha256": "4ba2a32c534e6b953dd2819f29bc3c54e176c0ff21d98d7dde0fa8202668fb7a",
+      "ok": true
+    },
+    {
+      "filename": "SN_gl1_sb29.pdf",
+      "title": "СН-2012.1-29. Сборник 29. Декоративные работы",
+      "url": "https://www.mos.ru/upload/documents/files/0aaf6893614cb43e23315a9833355f6e/SN_gl1_sb29.pdf",
+      "rel_path": "data/raw/pdf/SN_gl1_sb29.pdf",
+      "chapter": "Глава 1, сборник 29",
+      "bytes": 3287184,
+      "sha256": "d3cedd4e43f3f34916db16fa85e5b2566ce4941bc4878dde412a1244d7f78552",
+      "ok": true
+    },
+    {
+      "filename": "SN_gl1_sb3.pdf",
+      "title": "СН-2012.1-3. Сборник 3. Конструкции подземной части",
+      "url": "https://www.mos.ru/upload/documents/files/558cd8eafe8eae304cef748ef332c460/SN_gl1_sb3.pdf",
+      "rel_path": "data/raw/pdf/SN_gl1_sb3.pdf",
+      "chapter": "Глава 1, сборник 3",
+      "bytes": 920385,
+      "sha256": "22cf8957da0bb3c9ffd9e1960362bfca2c993686da9f11a3d36452f19b6553a1",
+      "ok": true
+    },
+    {
+      "filename": "SN_gl1_sb30.pdf",
+      "title": "СН-2012.1-30. Сборник 30. Оборудование объектов для проведения массовых мероприятий, театральное, сценическое, телевизионное и прочее",
+      "url": "https://www.mos.ru/upload/documents/files/3c4d7e4c24dbb9bbf45f668f6271f962/SN_gl1_sb30.pdf",
+      "rel_path": "data/raw/pdf/SN_gl1_sb30.pdf",
+      "chapter": "Глава 1, сборник 30",
+      "bytes": 1074948,
+      "sha256": "8aef7ba663f65b53e0778660697ba3a7ad92da17fb7c337207fe76f5311b8b8f",
+      "ok": true
+    },
+    {
+      "filename": "SN_gl1_sb4.pdf",
+      "title": "СН-2012.1-4. Сборник 4. Каркас",
+      "url": "https://www.mos.ru/upload/documents/files/2995c26b4d9da62bf40418850bf91bbf/SN_gl1_sb4.pdf",
+      "rel_path": "data/raw/pdf/SN_gl1_sb4.pdf",
+      "chapter": "Глава 1, сборник 4",
+      "bytes": 1118488,
+      "sha256": "47687d5c9a7187dff22066b4bf43c6b2ee515c9a43867f26aec5803933207f52",
+      "ok": true
+    },
+    {
+      "filename": "SN_gl1_sb45.pdf",
+      "title": "СН-2012.1-45. Сборник 45. Комплексы пуско-наладочных работ инженерных систем зданий",
+      "url": "https://www.mos.ru/upload/documents/files/b422cc60aba3b4bf7848253613345c05/SN_gl1_sb45.pdf",
+      "rel_path": "data/raw/pdf/SN_gl1_sb45.pdf",
+      "chapter": "Глава 1, сборник 45",
+      "bytes": 916222,
+      "sha256": "c9c0f36fa714719efc917b167e10fb203f5bba1625c7397df106f4be145e7cbb",
+      "ok": true
+    },
+    {
+      "filename": "SN_gl1_sb49.pdf",
+      "title": "СН-2012.1-49. Сборник 49. Снос, разборка зданий",
+      "url": "https://www.mos.ru/upload/documents/files/9836198a9608c7831ecadf6f704c871f/SN_gl1_sb49.pdf",
+      "rel_path": "data/raw/pdf/SN_gl1_sb49.pdf",
+      "chapter": "Глава 1, сборник 49",
+      "bytes": 770081,
+      "sha256": "d9849d5b36a7d2cb81e36a102e5902ad5623d37a739b0952f29a1c010f4070d2",
+      "ok": true
+    },
+    {
+      "filename": "SN_gl1_sb5.pdf",
+      "title": "СН-2012.1-5. Сборник 5. Стены наружные и внутренние",
+      "url": "https://www.mos.ru/upload/documents/files/e4faeaf2b0d4f0efa3bd7906410acd45/SN_gl1_sb5.pdf",
+      "rel_path": "data/raw/pdf/SN_gl1_sb5.pdf",
+      "chapter": "Глава 1, сборник 5",
+      "bytes": 5218168,
+      "sha256": "55977cdc5b7c9b834c225553b58823bc5d41712c12f3292415032db22c7951c6",
+      "ok": true
+    },
+    {
+      "filename": "SN_gl1_sb50.pdf",
+      "title": "СН-2012.1-50. Сборник 50. Разные работы",
+      "url": "https://www.mos.ru/upload/documents/files/5d681efb7f2b0752727018ac6a56f07b/SN_gl1_sb50.pdf",
+      "rel_path": "data/raw/pdf/SN_gl1_sb50.pdf",
+      "chapter": "Глава 1, сборник 50",
+      "bytes": 4786978,
+      "sha256": "63c625e6d57d9cab84c4697b38ccdaa26d914709764d430e38a5887794a9b1a0",
+      "ok": true
+    },
+    {
+      "filename": "SN_gl1_sb6.pdf",
+      "title": "СН-2012.1-6. Сборник 6. Перекрытия",
+      "url": "https://www.mos.ru/upload/documents/files/0a943aa771daa4d769cce243bf186949/SN_gl1_sb6.pdf",
+      "rel_path": "data/raw/pdf/SN_gl1_sb6.pdf",
+      "chapter": "Глава 1, сборник 6",
+      "bytes": 1413068,
+      "sha256": "ad4d6340d884beaa203cb32f1a3a3d64005a2e76e066b1153c73fcd678da7190",
+      "ok": true
+    },
+    {
+      "filename": "SN_gl1_sb7.pdf",
+      "title": "СН-2012.1-7. Сборник 7. Крыши и кровли",
+      "url": "https://www.mos.ru/upload/documents/files/8c979fc3de4eb824fbd0662580f2eb7d/SN_gl1_sb7.pdf",
+      "rel_path": "data/raw/pdf/SN_gl1_sb7.pdf",
+      "chapter": "Глава 1, сборник 7",
+      "bytes": 3312622,
+      "sha256": "7b099522b071e01c62cb7dc29eb6abdd63f37c0e91c2b4f8b46631a899b0d64d",
+      "ok": true
+    },
+    {
+      "filename": "SN_gl1_sb8.pdf",
+      "title": "СН-2012.1-8. Сборник 8. Перегородки",
+      "url": "https://www.mos.ru/upload/documents/files/1a449ba9520586a800e8fa728c9d7bae/SN_gl1_sb8.pdf",
+      "rel_path": "data/raw/pdf/SN_gl1_sb8.pdf",
+      "chapter": "Глава 1, сборник 8",
+      "bytes": 2676452,
+      "sha256": "a31fe424a3d8867480843812eb0b76a21c475deaa625a7b64fe2224af9c0ea05",
+      "ok": true
+    },
+    {
+      "filename": "SN_gl1_sb9.pdf",
+      "title": "СН-2012.1-9. Сборник 9. Лестницы и площадки",
+      "url": "https://www.mos.ru/upload/documents/files/8e714bac4632e8915fa3074a21ed9bc9/SN_gl1_sb9.pdf",
+      "rel_path": "data/raw/pdf/SN_gl1_sb9.pdf",
+      "chapter": "Глава 1, сборник 9",
+      "bytes": 1705536,
+      "sha256": "3da869f61cdc06060a4ac29a70a51ace22a9c0f03f3d6a64b066f530e7d87a58",
+      "ok": true
+    },
+    {
+      "filename": "SN_gl2_sb1.pdf",
+      "title": "СН-2012.2-1. Сборник 1. Автомобильные дороги",
+      "url": "https://www.mos.ru/upload/documents/files/408a35fc41a68939485f05462df3df0e/SN_gl2_sb1.pdf",
+      "rel_path": "data/raw/pdf/SN_gl2_sb1.pdf",
+      "chapter": "Глава 2, сборник 1",
+      "bytes": 6657829,
+      "sha256": "2d1d0e8860d2cf4061fcb74cd9ebf09217ef8e83a0b689270c00bf84688e4dba",
+      "ok": true
+    },
+    {
+      "filename": "SN_gl2_sb10.pdf",
+      "title": "СН-2012.2-10. Сборник 10. Сети электроосвещения",
+      "url": "https://www.mos.ru/upload/documents/files/9169aa04e539ac26906f21fb212f01c2/SN_gl2_sb10.pdf",
+      "rel_path": "data/raw/pdf/SN_gl2_sb10.pdf",
+      "chapter": "Глава 2, сборник 10",
+      "bytes": 2800238,
+      "sha256": "a2cbc42439732061df4e37b7edd439ea46977f5ea33ab6197381c699043bc7bb",
+      "ok": true
+    },
+    {
+      "filename": "SN_gl2_sb11.pdf",
+      "title": "СН-2012.2-11. Сборник 11. Очистные сооружения",
+      "url": "https://www.mos.ru/upload/documents/files/15385f8aefe905264749bfd40dd9578a/SN_gl2_sb11.pdf",
+      "rel_path": "data/raw/pdf/SN_gl2_sb11.pdf",
+      "chapter": "Глава 2, сборник 11",
+      "bytes": 1972072,
+      "sha256": "9a23f60354b194e0608dfe2398ecc282ad21b02535acc33f6a7b4d4a23926c83",
+      "ok": true
+    },
+    {
+      "filename": "SN_gl2_sb12.pdf",
+      "title": "СН-2012.2-12. Сборник 12. Сооружения инженерной защиты и городские гидротехнические сооружения",
+      "url": "https://www.mos.ru/upload/documents/files/730473800771dfe01a92568f0587a112/SN_gl2_sb12.pdf",
+      "rel_path": "data/raw/pdf/SN_gl2_sb12.pdf",
+      "chapter": "Глава 2, сборник 12",
+      "bytes": 2159948,
+      "sha256": "1ff8d09ce20103872b1025085f864d18f2cd7cda38f85d8288bd790c08c90ee1",
+      "ok": true
+    },
+    {
+      "filename": "SN_gl2_sb14.pdf",
+      "title": "СН-2012.2-14. Сборник 14. Телеавтоматическая система управления движением транспорта",
+      "url": "https://www.mos.ru/upload/documents/files/3e6fb395294fef0fed4fa6f902540a21/SN_gl2_sb14.pdf",
+      "rel_path": "data/raw/pdf/SN_gl2_sb14.pdf",
+      "chapter": "Глава 2, сборник 14",
+      "bytes": 3267429,
+      "sha256": "4a556724f885a7d83d9669751eb5a677e6290da56e8f7cc08461e4419519247e",
+      "ok": true
+    },
+    {
+      "filename": "SN_gl2_sb15.pdf",
+      "title": "СН-2012.2-15. Сборник 15. Технологические трубопроводы и оборудование",
+      "url": "https://www.mos.ru/upload/documents/files/849a21e8af2b15910716c4c4e3628d25/SN_gl2_sb15.pdf",
+      "rel_path": "data/raw/pdf/SN_gl2_sb15.pdf",
+      "chapter": "Глава 2, сборник 15",
+      "bytes": 826347,
+      "sha256": "e1ee110856402d1c53028c8c99321f68620a284312d97c3257ab8e0c4dd8347e",
+      "ok": true
+    },
+    {
+      "filename": "SN_gl2_sb16.pdf",
+      "title": "СН-2012.2-16. Сборник 16. Железные дороги",
+      "url": "https://www.mos.ru/upload/documents/files/7b46b37b942837aa1a20ae54bbba8091/SN_gl2_sb16.pdf",
+      "rel_path": "data/raw/pdf/SN_gl2_sb16.pdf",
+      "chapter": "Глава 2, сборник 16",
+      "bytes": 2045608,
+      "sha256": "6688a6ca340fb8bbb83c7a7cb046cf72b72a0f0abe21768ba9b47118967735f2",
+      "ok": true
+    },
+    {
+      "filename": "SN_gl2_sb17.pdf",
+      "title": "СН-2012.2-17. Сборник 17. Трамвайные пути",
+      "url": "https://www.mos.ru/upload/documents/files/1e30003d53dd5578af90d517d3012894/SN_gl2_sb17.pdf",
+      "rel_path": "data/raw/pdf/SN_gl2_sb17.pdf",
+      "chapter": "Глава 2, сборник 17",
+      "bytes": 1592186,
+      "sha256": "2da08f25cc78d6d1427df87fbe463cdc590a8463ecf26e770052dc88eaadbd36",
+      "ok": true
+    },
+    {
+      "filename": "SN_gl2_sb2.pdf",
+      "title": "СН-2012.2-2. Сборник 2. Сети водоснабжения",
+      "url": "https://www.mos.ru/upload/documents/files/d8b1ba714d8b54d3200716a929e49dd8/SN_gl2_sb2.pdf",
+      "rel_path": "data/raw/pdf/SN_gl2_sb2.pdf",
+      "chapter": "Глава 2, сборник 2",
+      "bytes": 7689182,
+      "sha256": "42cb8d60e44cb09079e901ef4f208b80352358053af8bcdb31280353ad96d0a3",
+      "ok": true
+    },
+    {
+      "filename": "SN_gl2_sb3.pdf",
+      "title": "СН-2012.2-3. Сборник 3. Водоотведение (канализация)",
+      "url": "https://www.mos.ru/upload/documents/files/58b053655ba72d62803dadd47b364e47/SN_gl2_sb3.pdf",
+      "rel_path": "data/raw/pdf/SN_gl2_sb3.pdf",
+      "chapter": "Глава 2, сборник 3",
+      "bytes": 4696696,
+      "sha256": "8cefbdd0bacbbcc3b07679aeaaf7dc64086421d0a4640947c59ad7d4277c3e4a",
+      "ok": true
+    },
+    {
+      "filename": "SN_gl2_sb4.pdf",
+      "title": "СН-2012.2-4. Сборник 4. Сети теплоснабжения",
+      "url": "https://www.mos.ru/upload/documents/files/f810291e161051dcfaa8ed45c4a9808c/SN_gl2_sb4.pdf",
+      "rel_path": "data/raw/pdf/SN_gl2_sb4.pdf",
+      "chapter": "Глава 2, сборник 4",
+      "bytes": 2372452,
+      "sha256": "b433fe3df08dd4cfd6cf01aba479692f5d9397d06e6bacdfd2e92a9e318624c7",
+      "ok": true
+    },
+    {
+      "filename": "SN_gl2_sb49.pdf",
+      "title": "СН-2012.2-49. Сборник 49. Земляные работы",
+      "url": "https://www.mos.ru/upload/documents/files/615f384c6e5f37a39be48e973ef12a2e/SN_gl2_sb49.pdf",
+      "rel_path": "data/raw/pdf/SN_gl2_sb49.pdf",
+      "chapter": "Глава 2, сборник 49",
+      "bytes": 1485292,
+      "sha256": "709103986a95411d089bd7a67e107b414196bac81752a101e2fe9cb87858995d",
+      "ok": true
+    },
+    {
+      "filename": "SN_gl2_sb5.pdf",
+      "title": "СН-2012.2-5. Сборник 5. Газопроводы",
+      "url": "https://www.mos.ru/upload/documents/files/a11fbcd70ea89c46b8126340bee33d70/SN_gl2_sb5.pdf",
+      "rel_path": "data/raw/pdf/SN_gl2_sb5.pdf",
+      "chapter": "Глава 2, сборник 5",
+      "bytes": 3724325,
+      "sha256": "78d1a8904fbb0d0fe86e22b2a926eb6b338e8cd296ba87eea4d8a0bba5349843",
+      "ok": true
+    },
+    {
+      "filename": "SN_gl2_sb50.pdf",
+      "title": "СН-2012.2-50. Сборник 50. Разные работы",
+      "url": "https://www.mos.ru/upload/documents/files/a14a5cc1b7b72b9392f1a865e3c4754f/SN_gl2_sb50.pdf",
+      "rel_path": "data/raw/pdf/SN_gl2_sb50.pdf",
+      "chapter": "Глава 2, сборник 50",
+      "bytes": 4900292,
+      "sha256": "79414ad45790f30a9a3acbc76d6eaedf7d6282cfd96c9a3934c8e7e33676a417",
+      "ok": true
+    },
+    {
+      "filename": "SN_gl2_sb6.pdf",
+      "title": "СН-2012.2-6. Сборник 6. Коллекторы",
+      "url": "https://www.mos.ru/upload/documents/files/27f9107b1940b8554b392833dcc9470e/SN_gl2_sb6.pdf",
+      "rel_path": "data/raw/pdf/SN_gl2_sb6.pdf",
+      "chapter": "Глава 2, сборник 6",
+      "bytes": 4597938,
+      "sha256": "4dd1f5aab2d36a53f476b8603883ae6eb74fefcf1cbce77337398f8c6d96a1bd",
+      "ok": true
+    },
+    {
+      "filename": "SN_gl2_sb8.pdf",
+      "title": "СН-2012.2-8. Сборник 8. Сети связи и сигнализации",
+      "url": "https://www.mos.ru/upload/documents/files/179d6f9d1307cdfa28eaaaa40e3f5b20/SN_gl2_sb8.pdf",
+      "rel_path": "data/raw/pdf/SN_gl2_sb8.pdf",
+      "chapter": "Глава 2, сборник 8",
+      "bytes": 3490408,
+      "sha256": "2335415044dc0c1428753b6811e8e6cab7aed7bdedcb57192d2bd16e28dcd48f",
+      "ok": true
+    },
+    {
+      "filename": "SN_gl2_sb9.pdf",
+      "title": "СН-2012.2-9. Сборник 9. Сети электроснабжения",
+      "url": "https://www.mos.ru/upload/documents/files/a0e231e5a9adbbe35b4063f70bf375c5/SN_gl2_sb9.pdf",
+      "rel_path": "data/raw/pdf/SN_gl2_sb9.pdf",
+      "chapter": "Глава 2, сборник 9",
+      "bytes": 7368251,
+      "sha256": "5ea1e42ba41871318c652bdcd987299c173704438fea3f3aad619d5b979d7310",
+      "ok": true
+    },
+    {
+      "filename": "SN_gl3_sb1.pdf",
+      "title": "СН-2012.3-1. Сборник 1. Мосты, путепроводы, эстакады",
+      "url": "https://www.mos.ru/upload/documents/files/f17c0884342cabd150fd872e2ce9a56a/SN_gl3_sb1.pdf",
+      "rel_path": "data/raw/pdf/SN_gl3_sb1.pdf",
+      "chapter": "Глава 3, сборник 1",
+      "bytes": 8209621,
+      "sha256": "a42dbd985a8104e3e632198caadb1063944eab9c33c7d898172e4bf10b1f1c71",
+      "ok": true
+    },
+    {
+      "filename": "SN_gl3_sb3.pdf",
+      "title": "СН-2012.3-3. Сборник 3. Подъёмно-транспортное оборудование",
+      "url": "https://www.mos.ru/upload/documents/files/84f33a3a485752db034947577f8c8384/SN_gl3_sb3.pdf",
+      "rel_path": "data/raw/pdf/SN_gl3_sb3.pdf",
+      "chapter": "Глава 3, сборник 3",
+      "bytes": 886751,
+      "sha256": "919a019e0183bde8b7ac9feae7ea99082c0d6fe076bc20373ae116999b5049ac",
+      "ok": true
+    },
+    {
+      "filename": "SN_gl4_sb1.pdf",
+      "title": "СН-2012.4-1. Сборник 1. Метрополитен",
+      "url": "https://www.mos.ru/upload/documents/files/7b79e03f28895248b4470a987d4e46a9/SN_gl4_sb1.pdf",
+      "rel_path": "data/raw/pdf/SN_gl4_sb1.pdf",
+      "chapter": "Глава 4, сборник 1",
+      "bytes": 4489635,
+      "sha256": "8ddd4f32c6208769266416b93914f8a27151792c1c6f4a88842ba4ac3fbed3cd",
+      "ok": true
+    },
+    {
+      "filename": "SN_gl4_sb2.pdf",
+      "title": "СН-2012.4-2. Сборник 2. Тоннели",
+      "url": "https://www.mos.ru/upload/documents/files/7ee1546d0cbbba6de8efb09263f9086c/SN_gl4_sb2.pdf",
+      "rel_path": "data/raw/pdf/SN_gl4_sb2.pdf",
+      "chapter": "Глава 4, сборник 2",
+      "bytes": 5088569,
+      "sha256": "fe620dab96f20ac89ed0de9ee2030f9f65843ea5ef6dc650901e60940fef12a2",
+      "ok": true
+    },
+    {
+      "filename": "SN_gl5_sb1.pdf",
+      "title": "СН-2012.5.1. Сборник 1. Электротехнические устройства систем иллюминации",
+      "url": "https://www.mos.ru/upload/documents/files/1f6bec43a75a2d7f909ebd50ae76028f/SN_gl5_sb1.pdf",
+      "rel_path": "data/raw/pdf/SN_gl5_sb1.pdf",
+      "chapter": "Глава 5, сборник 1",
+      "bytes": 1097896,
+      "sha256": "0623510489050bb30f36874736399a57e1e537edfccbae6c06a34a846145a1b6",
+      "ok": true
+    },
+    {
+      "filename": "SN_gl5_sb2.pdf",
+      "title": "СН-2012.5.2. Сборник 2. Флаги, стяги, перетяжки",
+      "url": "https://www.mos.ru/upload/documents/files/3fef73b16e18427459ff49d3a301f24b/SN_gl5_sb2.pdf",
+      "rel_path": "data/raw/pdf/SN_gl5_sb2.pdf",
+      "chapter": "Глава 5, сборник 2",
+      "bytes": 812163,
+      "sha256": "c75992c0662508930d2bc6533b8951002a879c56f581d07f5bb1d8a4e5f008a5",
+      "ok": true
+    },
+    {
+      "filename": "SN_gl5_sb3.pdf",
+      "title": "СН-2012.5.3. Сборник 3. Внешнее благоустройство",
+      "url": "https://www.mos.ru/upload/documents/files/4577934448895dd964850d73cd9fb7f9/SN_gl5_sb3.pdf",
+      "rel_path": "data/raw/pdf/SN_gl5_sb3.pdf",
+      "chapter": "Глава 5, сборник 3",
+      "bytes": 4733388,
+      "sha256": "50f1a210b0d32207adcd8db4cd3d7873c8a9956097558b382925c85d50818f5f",
+      "ok": true
+    },
+    {
+      "filename": "SN_gl5_sb4.pdf",
+      "title": "СН-2012.5.4. Сборник 4. Содержание зеленых насаждений",
+      "url": "https://www.mos.ru/upload/documents/files/1880cdfebc3358365e34f12292370cf1/SN_gl5_sb4.pdf",
+      "rel_path": "data/raw/pdf/SN_gl5_sb4.pdf",
+      "chapter": "Глава 5, сборник 4",
+      "bytes": 4135425,
+      "sha256": "514e766b6d1ce25950ad0dab21f6132cbcbb217b575b421d9470ff5a5a31c7ff",
+      "ok": true
+    },
+    {
+      "filename": "SN_gl5_sb5.pdf",
+      "title": "СН-2012.5.5. Сборник 5. Городская монументальная скульптура из металла и камня, находящаяся на открытом воздухе",
+      "url": "https://www.mos.ru/upload/documents/files/7f24172e3e8e9d0e2acf1bd4258cda33/SN_gl5_sb5.pdf",
+      "rel_path": "data/raw/pdf/SN_gl5_sb5.pdf",
+      "chapter": "Глава 5, сборник 5",
+      "bytes": 4655746,
+      "sha256": "44ca3e83ebe6ff1834203e30563ed042761e14d091940b164d0bd9b676aeae46",
+      "ok": true
+    },
+    {
+      "filename": "SN_gl5_sb6.pdf",
+      "title": "СН-2012.5.6. Сборник 6. Фонтаны",
+      "url": "https://www.mos.ru/upload/documents/files/c209731560910be7aa93643cb3d37ee7/SN_gl5_sb6.pdf",
+      "rel_path": "data/raw/pdf/SN_gl5_sb6.pdf",
+      "chapter": "Глава 5, сборник 6",
+      "bytes": 1550753,
+      "sha256": "ccd1cb5192cd9193d3bd7d0909ca8942af26722bdc0e58416b41ada727bb14ea",
+      "ok": true
+    },
+    {
+      "filename": "SN_gl6_sb2.pdf",
+      "title": "СН-2012.6.2. Сборник 2. Укрупненные показатели стоимости технического обслуживания и ремонта зданий образовательных организаций",
+      "url": "https://www.mos.ru/upload/documents/files/65efd911fd1b1c0683c43f04ae77435f/SN_gl6_sb2.pdf",
+      "rel_path": "data/raw/pdf/SN_gl6_sb2.pdf",
+      "chapter": "Глава 6, сборник 2",
+      "bytes": 4935429,
+      "sha256": "d9e1a14f3e7401be74fc6aa7deae843b344251c237583f586318884e3fd16e14",
+      "ok": true
+    },
+    {
+      "filename": "SN_gl6_sb3.pdf",
+      "title": "СН-2012.6.3. Сборник 3. Укрупненные показатели стоимости технического обслуживания и ремонта зданий медицинских организаций, физической культуры и спорта",
+      "url": "https://www.mos.ru/upload/documents/files/67094e15687ed67577a2f195b0a85db7/SN_gl6_sb3.pdf",
+      "rel_path": "data/raw/pdf/SN_gl6_sb3.pdf",
+      "chapter": "Глава 6, сборник 3",
+      "bytes": 3628643,
+      "sha256": "07121aed81fcafb8f3456043f8191d11935260a2183f65f3370102d1b4bef534",
+      "ok": true
+    },
+    {
+      "filename": "SN_gl6_sb4.pdf",
+      "title": "СН-2012.6.4. Сборник 4. Укрупненные показатели стоимости технического обслуживания и ремонта подъемно-транспортного оборудования",
+      "url": "https://www.mos.ru/upload/documents/files/ab75c568c0295b674f6e0a0891a41d8c/SN_gl6_sb4.pdf",
+      "rel_path": "data/raw/pdf/SN_gl6_sb4.pdf",
+      "chapter": "Глава 6, сборник 4",
+      "bytes": 1380509,
+      "sha256": "de6dc54032da491ba6e34db0705b3867ddf4dd83038e920c5d8c373ea00c5a50",
+      "ok": true
+    },
+    {
+      "filename": "SN_gl6_sb5.pdf",
+      "title": "СН-2012.6.5. Сборник 5. Укрупненные показатели стоимости технического обслуживания и ремонта объектов ГБУ «Миграционный центр»",
+      "url": "https://www.mos.ru/upload/documents/files/d3d0ad1376538147c900f75e184b5123/SN_gl6_sb5.pdf",
+      "rel_path": "data/raw/pdf/SN_gl6_sb5.pdf",
+      "chapter": "Глава 6, сборник 5",
+      "bytes": 852766,
+      "sha256": "1da004f691d6ebcefc384698e2a02ed2446465b67ecfebfdd416ce6d62760ffe",
+      "ok": true
+    },
+    {
+      "filename": "SN_gl6_sb6.pdf",
+      "title": "СН-2012.6.6. Сборник 6. Укрупненные показатели стоимости работ по содержанию территорий и объектов внешнего благоустройства ВДНХ и парка «Останкино»",
+      "url": "https://www.mos.ru/upload/documents/files/e9ec08085b027c06ca0dd61ed9099166/SN_gl6_sb6.pdf",
+      "rel_path": "data/raw/pdf/SN_gl6_sb6.pdf",
+      "chapter": "Глава 6, сборник 6",
+      "bytes": 1062286,
+      "sha256": "f9253295c0ffb64303177c21a5882f0eb601efe7a9223486600424d4a9c2cbb9",
+      "ok": true
+    },
+    {
+      "filename": "SN_gl7_sb1.pdf",
+      "title": "СН-2012.7-1. Сборник 1. Игровая зона футбольного стадиона",
+      "url": "https://www.mos.ru/upload/documents/files/17ae8cc479678080d55001bf588322ac/SN_gl7_sb1.pdf",
+      "rel_path": "data/raw/pdf/SN_gl7_sb1.pdf",
+      "chapter": "Глава 7, сборник 1",
+      "bytes": 873799,
+      "sha256": "3c478545a7c5bcff5e86690dc0e5592a315ef657a1f88a6a185d26fe8f3d8027",
+      "ok": true
+    },
+    {
+      "filename": "SN_gl7_sb2.pdf",
+      "title": "СН-2012.7-2. Сборник 2. Оборудование для обеспечения антитеррористической защищенности зданий и сооружений",
+      "url": "https://www.mos.ru/upload/documents/files/9bb155d3e3ddc03e0aec5a1f1e072766/SN_gl7_sb2.pdf",
+      "rel_path": "data/raw/pdf/SN_gl7_sb2.pdf",
+      "chapter": "Глава 7, сборник 2",
+      "bytes": 791477,
+      "sha256": "94bd2840d5df6fb54d26f9388a545e954e2853dc6c2478f55c24d87c886447d1",
+      "ok": true
+    },
+    {
+      "filename": "SN_gl7_sb3.pdf",
+      "title": "СН-2012.7-3. Сборник 3. Оборудование уникальных, высокотехнологичных аттракционов и других объектов зрелищного, развлекательного и другого назначений",
+      "url": "https://www.mos.ru/upload/documents/files/b840bc1c8122ee3e22779fed18036e6b/SN_gl7_sb3.pdf",
+      "rel_path": "data/raw/pdf/SN_gl7_sb3.pdf",
+      "chapter": "Глава 7, сборник 3",
+      "bytes": 1260431,
+      "sha256": "ab9b35be741fb0170a791e9688db30ae71acd24f550a1b579b79dc2e22c80913",
+      "ok": true
+    },
+    {
+      "filename": "SN_gl7_sb7.pdf",
+      "title": "СН-2012.7-7. Сборник 7. Кровли, покрытия, купола и др.",
+      "url": "https://www.mos.ru/upload/documents/files/07ffa96072eb173a5aded069c2fefbfc/SN_gl7_sb7.pdf",
+      "rel_path": "data/raw/pdf/SN_gl7_sb7.pdf",
+      "chapter": "Глава 7, сборник 7",
+      "bytes": 880820,
+      "sha256": "e48641f004c9d2b6e057d3b731431f68b0f7901d5aba8360a5cb6ea68408bfab",
+      "ok": true
+    },
+    {
+      "filename": "sn21.pdf",
+      "title": "Общие положения",
+      "url": "https://www.mos.ru/upload/documents/files/c2df95b59a030c20f6b81e19ffa8688d/sn21.pdf",
+      "rel_path": "data/raw/pdf/sn21.pdf",
+      "chapter": "Глава 21, общие положения",
+      "bytes": 299881,
+      "sha256": "67f3007839b3b61be04b559ad3198b8627c7e6491238716a8d48e157f4a08ad5",
+      "ok": true
+    },
+    {
+      "filename": "sn21_1.pdf",
+      "title": "СН-2012.21-1. Раздел 1. Материалы строительные, дорожные и для реставрационно-восстановительных работ",
+      "url": "https://www.mos.ru/upload/documents/files/7c7d2b623e55cbfd1d4d098011554ad9/sn21_1.pdf",
+      "rel_path": "data/raw/pdf/sn21_1.pdf",
+      "chapter": "Глава 21, раздел 1",
+      "bytes": 5524270,
+      "sha256": "f38d2534350278f3fd680efd653ec024a1f3ed7ca7a9992b1c1cff667acd4f35",
+      "ok": true
+    },
+    {
+      "filename": "sn21_10.pdf",
+      "title": "СН-2012.21-10. Раздел 10. Лепные изделия",
+      "url": "https://www.mos.ru/upload/documents/files/08983836a21619286405f5fc5d2b3006/sn21_10.pdf",
+      "rel_path": "data/raw/pdf/sn21_10.pdf",
+      "chapter": "Глава 21, раздел 10",
+      "bytes": 302683,
+      "sha256": "4ce58c6cf561ba9222b2f694a3a8171c8029f8eb393f8657f31c2f4a379405e3",
+      "ok": true
+    },
+    {
+      "filename": "sn21_11.pdf",
+      "title": "СН-2012.21-11. Раздел 11. Изделия из естественных камней",
+      "url": "https://www.mos.ru/upload/documents/files/a9e8372f90efae32ff487d3212e808ae/sn21_11.pdf",
+      "rel_path": "data/raw/pdf/sn21_11.pdf",
+      "chapter": "Глава 21, раздел 11",
+      "bytes": 946728,
+      "sha256": "76fe91c9bf70d04d03e9484f4757cba50b4a1428d312aba5b53d02d914aa8e54",
+      "ok": true
+    },
+    {
+      "filename": "sn21_12.pdf",
+      "title": "СН-2012.21-12. Раздел 12. Трубные заготовки, трубы, соединительные части и крепления к ним",
+      "url": "https://www.mos.ru/upload/documents/files/4f893d64d6dd12509d200e6335746d63/sn21_12.pdf",
+      "rel_path": "data/raw/pdf/sn21_12.pdf",
+      "chapter": "Глава 21, раздел 12",
+      "bytes": 2296635,
+      "sha256": "482891075f7091de6f8e460d184675dc348935d5daa2c9f8e1e5f74f39bf211c",
+      "ok": true
+    },
+    {
+      "filename": "sn21_13.pdf",
+      "title": "СН-2012.21-13. Раздел 13. Арматура (для трубопроводов и водоразборная)",
+      "url": "https://www.mos.ru/upload/documents/files/5d518e43e4800be6d5de40bf48a49ac0/sn21_13.pdf",
+      "rel_path": "data/raw/pdf/sn21_13.pdf",
+      "chapter": "Глава 21, раздел 13",
+      "bytes": 952148,
+      "sha256": "63c3b5ad623b159be9fa208a2618afba3127c7a5d1e24c82ab8177437daeb7da",
+      "ok": true
+    },
+    {
+      "filename": "sn21_14.pdf",
+      "title": "СН-2012.21-14. Раздел 14. Материалы и изделия для сооружений связи, радиовещания и телевидения",
+      "url": "https://www.mos.ru/upload/documents/files/3a36ff217f6ee0c9bc12dae300b8dc2f/sn21_14.pdf",
+      "rel_path": "data/raw/pdf/sn21_14.pdf",
+      "chapter": "Глава 21, раздел 14",
+      "bytes": 530925,
+      "sha256": "9b942730aa487bc9c2fb81c5f616f766a513df6c226d0515fdad42cf43e5c9da",
+      "ok": true
+    },
+    {
+      "filename": "sn21_15.pdf",
+      "title": "СН-2012.21-15. Раздел 15. Насосы",
+      "url": "https://www.mos.ru/upload/documents/files/58a58a65e5f42588eac643a72521e87c/sn21_15.pdf",
+      "rel_path": "data/raw/pdf/sn21_15.pdf",
+      "chapter": "Глава 21, раздел 15",
+      "bytes": 578788,
+      "sha256": "997b892f2613485c21699fbe2a378e4ac2fab7373e033cd744591bc0aede0ab0",
+      "ok": true
+    },
+    {
+      "filename": "sn21_17.pdf",
+      "title": "СН-2012.21-17. Раздел 17. Материалы и изделия для систем водоснабжения, канализации и водостоков",
+      "url": "https://www.mos.ru/upload/documents/files/7cb05cf925c8db95d00c31e494926af3/sn21_17.pdf",
+      "rel_path": "data/raw/pdf/sn21_17.pdf",
+      "chapter": "Глава 21, раздел 17",
+      "bytes": 866258,
+      "sha256": "c0c8dfe66b589696bf9cd10632e9b2af660c74817bb6c4e5b2c6f606e0e3bf30",
+      "ok": true
+    },
+    {
+      "filename": "sn21_18.pdf",
+      "title": "СН-2012.21-18. Раздел 18. Материалы и изделия для систем теплоснабжения",
+      "url": "https://www.mos.ru/upload/documents/files/dbceb6a92796b310f79c432eb447d1a1/sn21_18.pdf",
+      "rel_path": "data/raw/pdf/sn21_18.pdf",
+      "chapter": "Глава 21, раздел 18",
+      "bytes": 1160412,
+      "sha256": "f44a12a3f1f002b65a0cc42976bb168f8673c3d8ae41efefc65046a975afb0de",
+      "ok": true
+    },
+    {
+      "filename": "sn21_19.pdf",
+      "title": "СН-2012.21-19. Раздел 19. Материалы и изделия для систем вентиляции и кондиционирования воздуха",
+      "url": "https://www.mos.ru/upload/documents/files/529381d41bf825eb994e376657173162/sn21_19.pdf",
+      "rel_path": "data/raw/pdf/sn21_19.pdf",
+      "chapter": "Глава 21, раздел 19",
+      "bytes": 1127563,
+      "sha256": "86e5b01f0bd1fb1224f58ea185a819a05b9e14df6ef2618f3c6050bee0497e68",
+      "ok": true
+    },
+    {
+      "filename": "sn21_2.pdf",
+      "title": "СН-2012.21-2. Раздел 2. Огнеупоры",
+      "url": "https://www.mos.ru/upload/documents/files/7c16c508ec6cf45cfce44bcf7d74581f/sn21_2.pdf",
+      "rel_path": "data/raw/pdf/sn21_2.pdf",
+      "chapter": "Глава 21, раздел 2",
+      "bytes": 418162,
+      "sha256": "3d2d7788485b2d574f876860a731da13f0d00d41447c69d1451fa0393e7043d6",
+      "ok": true
+    },
+    {
+      "filename": "sn21_20.pdf",
+      "title": "СН-2012.21-20. Раздел 20. Материалы и изделия для систем газоснабжения",
+      "url": "https://www.mos.ru/upload/documents/files/52e58bcc12072f0ab54ac8fb78b1c1b3/sn21_20.pdf",
+      "rel_path": "data/raw/pdf/sn21_20.pdf",
+      "chapter": "Глава 21, раздел 20",
+      "bytes": 499934,
+      "sha256": "18139f14788aa08c80c1e9b866122ff1d86c6c5e36309f0c8d8bdfb6c3a521d5",
+      "ok": true
+    },
+    {
+      "filename": "sn21_21.pdf",
+      "title": "СН-2012.21-21. Раздел 21. Монтажные и электроустановочные материалы и изделия, электроконструкции",
+      "url": "https://www.mos.ru/upload/documents/files/f77cbc3e22fea2aceb3becb64a4f07f7/sn21_21.pdf",
+      "rel_path": "data/raw/pdf/sn21_21.pdf",
+      "chapter": "Глава 21, раздел 21",
+      "bytes": 1183525,
+      "sha256": "02ed8be289f6435873478e57e0b74e42f7ca986d4eba98fe1973ea14455092ec",
+      "ok": true
+    },
+    {
+      "filename": "sn21_22.pdf",
+      "title": "СН-2012.21-22. Раздел 22. Арматура, стекло и приборы электроосветительные",
+      "url": "https://www.mos.ru/upload/documents/files/3aaccf7a44003986d01210c732a8e7c6/sn21_22.pdf",
+      "rel_path": "data/raw/pdf/sn21_22.pdf",
+      "chapter": "Глава 21, раздел 22",
+      "bytes": 738839,
+      "sha256": "b1ca9e413524f3cd0c691b638f3fb8d11a1626d8edfd9bf80ee62ff61355024d",
+      "ok": true
+    },
+    {
+      "filename": "sn21_23.pdf",
+      "title": "СН-2012.21-23. Раздел 23. Кабельные изделия",
+      "url": "https://www.mos.ru/upload/documents/files/552052dedaba30ee4b8a577338a91afc/sn21_23.pdf",
+      "rel_path": "data/raw/pdf/sn21_23.pdf",
+      "chapter": "Глава 21, раздел 23",
+      "bytes": 1554627,
+      "sha256": "63634c798fd9cadd2e14386760529826241fabdcbc7052e366543a34f2057c98",
+      "ok": true
+    },
+    {
+      "filename": "sn21_24.pdf",
+      "title": "СН-2012.21-24. Раздел 24. Материалы и изделия для контактных сетей трамвая и троллейбуса, металлические опоры наружного освещения",
+      "url": "https://www.mos.ru/upload/documents/files/e4d934eaa64e3d2aa5a6b1582f9b5d66/sn21_24.pdf",
+      "rel_path": "data/raw/pdf/sn21_24.pdf",
+      "chapter": "Глава 21, раздел 24",
+      "bytes": 520740,
+      "sha256": "2784ea748657fe2eea615fd9a73b862e7cedf9c2cae2555dd8fdcf2c0d097af1",
+      "ok": true
+    },
+    {
+      "filename": "sn21_26.pdf",
+      "title": "СН-2012.21-26. Раздел 26. Запасные части, материалы и изделия для технического обслуживания и ремонта оборудования",
+      "url": "https://www.mos.ru/upload/documents/files/09fca7a3374a75e7e9e2daa08d535dbb/sn21_26.pdf",
+      "rel_path": "data/raw/pdf/sn21_26.pdf",
+      "chapter": "Глава 21, раздел 26",
+      "bytes": 639708,
+      "sha256": "f2eb11822d65bf4c27236e8430f9a19fcb835d5533c8829874b79bbb6db55f81",
+      "ok": true
+    },
+    {
+      "filename": "sn21_3.pdf",
+      "title": "СН-2012.21-3. Раздел 3. Полуфабрикаты",
+      "url": "https://www.mos.ru/upload/documents/files/1dbe74cd64d0fa19d8ddd3e229738db9/sn21_3.pdf",
+      "rel_path": "data/raw/pdf/sn21_3.pdf",
+      "chapter": "Глава 21, раздел 3",
+      "bytes": 1185338,
+      "sha256": "f2d3de05854643bcdfb8e540a1dd29b7fa107030a1707846fd66393e0478f58d",
+      "ok": true
+    },
+    {
+      "filename": "sn21_33.pdf",
+      "title": "СН-2012.21-33. Раздел 33. Санитарно-техническое оборудование",
+      "url": "https://www.mos.ru/upload/documents/files/f2ff5566bf5bdb23b3b59bdf8d81fbd0/sn21_33.pdf",
+      "rel_path": "data/raw/pdf/sn21_33.pdf",
+      "chapter": "Глава 21, раздел 33",
+      "bytes": 763743,
+      "sha256": "c2bca89f1230fc0195a2d13f3355b4a66bd7324826d03af8ccead6c87ec2f2cf",
+      "ok": true
+    },
+    {
+      "filename": "sn21_4.pdf",
+      "title": "СН-2012.21-4. Раздел 4. Материалы садово-паркового и зеленого строительства",
+      "url": "https://www.mos.ru/upload/documents/files/0629ef341cf7807aad217d36012f8608/sn21_4.pdf",
+      "rel_path": "data/raw/pdf/sn21_4.pdf",
+      "chapter": "Глава 21, раздел 4",
+      "bytes": 1034733,
+      "sha256": "7658aa550de705c271c86cdc1aea52edb63a977a32dc5c82f5612201067f3399",
+      "ok": true
+    },
+    {
+      "filename": "sn21_5.pdf",
+      "title": "СН-2012.21-5. Раздел 5. Железобетонные и бетонные изделия",
+      "url": "https://www.mos.ru/upload/documents/files/a462a8fb515563f855d4991951e64d63/sn21_5.pdf",
+      "rel_path": "data/raw/pdf/sn21_5.pdf",
+      "chapter": "Глава 21, раздел 5",
+      "bytes": 797388,
+      "sha256": "95b26d1a139495c95b7eae716e15119d44fd8a24d7fe06808668bd624e8e40d0",
+      "ok": true
+    },
+    {
+      "filename": "sn21_6.pdf",
+      "title": "СН-2012.21-6. Раздел 6. Металлические конструкции",
+      "url": "https://www.mos.ru/upload/documents/files/5d074763865ee63b4ef60350e0d67c56/sn21_6.pdf",
+      "rel_path": "data/raw/pdf/sn21_6.pdf",
+      "chapter": "Глава 21, раздел 6",
+      "bytes": 642965,
+      "sha256": "9c9a7f6196ba8f900657acbf5e354294dcd7e847f2581a9718e4e50f0a1fc6a1",
+      "ok": true
+    },
+    {
+      "filename": "sn21_7.pdf",
+      "title": "СН-2012.21-7. Раздел 7. Металлические изделия",
+      "url": "https://www.mos.ru/upload/documents/files/86cb990e694456c89457897041b8297e/sn21_7.pdf",
+      "rel_path": "data/raw/pdf/sn21_7.pdf",
+      "chapter": "Глава 21, раздел 7",
+      "bytes": 1471220,
+      "sha256": "455520a9ef77c106af0cdb9bec8dc8b540129fa7f1e2bafa353af5aab6f710bd",
+      "ok": true
+    },
+    {
+      "filename": "sn21_8.pdf",
+      "title": "СН-2012.21-8. Раздел 8. Скобяные и печные приборы",
+      "url": "https://www.mos.ru/upload/documents/files/f5abf267259f07d19e25538edbbf4b16/sn21_8.pdf",
+      "rel_path": "data/raw/pdf/sn21_8.pdf",
+      "chapter": "Глава 21, раздел 8",
+      "bytes": 546593,
+      "sha256": "06a161d39899ea61df56aaa60ef4a570edb259669a818b635346e647c3e9e32e",
+      "ok": true
+    },
+    {
+      "filename": "sn21_9.pdf",
+      "title": "СН-2012.21-9. Раздел 9. Изделия из дерева и пластмассовых профилей",
+      "url": "https://www.mos.ru/upload/documents/files/31372167bfc5eb27c505dd4acff292c4/sn21_9.pdf",
+      "rel_path": "data/raw/pdf/sn21_9.pdf",
+      "chapter": "Глава 21, раздел 9",
+      "bytes": 1082376,
+      "sha256": "79e16fa1aa55fff731bbdea7836b15d8c927001c605b4914d8b797bc8969f021",
+      "ok": true
+    },
+    {
+      "filename": "sn_22.pdf",
+      "title": "СН-2012.22. Глава 22. Показатели стоимости эксплуатации машин и механизмов",
+      "url": "https://www.mos.ru/upload/documents/files/265fc003ce8ed5e766f1615283fb1775/sn_22.pdf",
+      "rel_path": "data/raw/pdf/sn_22.pdf",
+      "chapter": "Глава 22",
+      "bytes": 2089187,
+      "sha256": "95b799d66bc6ea197f8be6cb57eeca8466e588feed756ec21a0a6ff0502eaa03",
+      "ok": true
+    }
+  ]
+}
