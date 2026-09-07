@@ -1,0 +1,106 @@
+OP.pdf             kind=other     pages=  19 rates=    0 res=    0 mat=    0 mach=   0
+Rasporyajenieot25062026_DPR-R-15_26_.pdf kind=other     pages=   2 rates=    0 res=    0 mat=    0 mach=   0
+SN_gl1_sb1.pdf     kind=rates     pages=   7 rates=   12 res=    6 mat=    0 mach=   0
+SN_gl1_sb10.pdf    kind=rates     pages=  83 rates=  456 res=  427 mat=    0 mach=   0
+SN_gl1_sb11.pdf    kind=rates     pages=  89 rates=  477 res=  478 mat=    0 mach=   0
+SN_gl1_sb12.pdf    kind=rates     pages=  17 rates=   82 res=  107 mat=    0 mach=   0
+SN_gl1_sb13.pdf    kind=rates     pages= 346 rates= 1987 res= 1947 mat=    0 mach=   0
+SN_gl1_sb14.pdf    kind=rates     pages= 124 rates=  794 res=  858 mat=    0 mach=   0
+SN_gl1_sb15.pdf    kind=rates     pages=  58 rates=  305 res=  373 mat=    0 mach=   0
+SN_gl1_sb16.pdf    kind=rates     pages=  44 rates=  207 res=  189 mat=    0 mach=   0
+SN_gl1_sb17.pdf    kind=rates     pages=  96 rates=  498 res=  579 mat=    0 mach=   0
+SN_gl1_sb18.pdf    kind=rates     pages= 179 rates= 1127 res= 1217 mat=    0 mach=   0
+SN_gl1_sb19.pdf    kind=rates     pages=  19 rates=   65 res=   83 mat=    0 mach=   0
+SN_gl1_sb2.pdf     kind=rates     pages=  31 rates=  114 res=  113 mat=    0 mach=   0
+SN_gl1_sb20.pdf    kind=rates     pages=  57 rates=  342 res=  265 mat=    0 mach=   0
+SN_gl1_sb21.pdf    kind=rates     pages= 352 rates= 2595 res= 1466 mat=    0 mach=   0
+SN_gl1_sb22.pdf    kind=rates     pages= 184 rates= 1246 res=  699 mat=    0 mach=   0
+SN_gl1_sb23.pdf    kind=rates     pages= 119 rates=  762 res=  385 mat=    0 mach=   0
+SN_gl1_sb24.pdf    kind=rates     pages= 208 rates= 1065 res=  798 mat=    0 mach=   0
+SN_gl1_sb25.pdf    kind=rates     pages= 319 rates= 1303 res=  993 mat=    0 mach=   0
+SN_gl1_sb26.pdf    kind=rates     pages= 143 rates= 1085 res=  641 mat=    0 mach=   0
+SN_gl1_sb27.pdf    kind=rates     pages=   6 rates=   21 res=    4 mat=    0 mach=   0
+SN_gl1_sb29.pdf    kind=rates     pages=  82 rates=  506 res=  380 mat=    0 mach=   0
+SN_gl1_sb3.pdf     kind=rates     pages=  15 rates=   45 res=   45 mat=    0 mach=   0
+SN_gl1_sb30.pdf    kind=rates     pages=  20 rates=   60 res=   41 mat=    0 mach=   0
+SN_gl1_sb4.pdf     kind=rates     pages=  18 rates=   57 res=   58 mat=    0 mach=   0
+SN_gl1_sb45.pdf    kind=rates     pages=  10 rates=   49 res=    0 mat=    0 mach=   0
+SN_gl1_sb49.pdf    kind=rates     pages=  10 rates=   30 res=   30 mat=    0 mach=   0
+SN_gl1_sb5.pdf     kind=rates     pages= 101 rates=  530 res=  447 mat=    0 mach=   0
+SN_gl1_sb50.pdf    kind=rates     pages=  88 rates=  573 res=  464 mat=    0 mach=   0
+SN_gl1_sb6.pdf     kind=rates     pages=  28 rates=  116 res=   93 mat=    0 mach=   0
+SN_gl1_sb7.pdf     kind=rates     pages=  80 rates=  388 res=  351 mat=    0 mach=   0
+SN_gl1_sb8.pdf     kind=rates     pages=  47 rates=  125 res=  121 mat=    0 mach=   0
+SN_gl1_sb9.pdf     kind=rates     pages=  34 rates=  155 res=  108 mat=    0 mach=   0
+SN_gl2_sb1.pdf     kind=rates     pages= 195 rates=  932 res=  831 mat=    0 mach=   0
+SN_gl2_sb10.pdf    kind=rates     pages=  71 rates=  291 res=  327 mat=    0 mach=   0
+SN_gl2_sb11.pdf    kind=rates     pages=  41 rates=  382 res=  291 mat=    0 mach=   0
+SN_gl2_sb12.pdf    kind=rates     pages=  53 rates=  199 res=  225 mat=    0 mach=   0
+SN_gl2_sb14.pdf    kind=rates     pages=  83 rates=  740 res=  284 mat=    0 mach=   0
+SN_gl2_sb15.pdf    kind=rates     pages=  10 rates=   60 res=   60 mat=    0 mach=   0
+SN_gl2_sb16.pdf    kind=rates     pages=  48 rates=  242 res=  336 mat=    0 mach=   0
+SN_gl2_sb17.pdf    kind=rates     pages=  34 rates=  112 res=  130 mat=    0 mach=   0
+SN_gl2_sb2.pdf     kind=rates     pages= 208 rates= 1204 res= 1150 mat=    0 mach=   0
+SN_gl2_sb3.pdf     kind=rates     pages= 114 rates=  578 res=  465 mat=    0 mach=   0
+SN_gl2_sb4.pdf     kind=rates     pages=  53 rates=  206 res=  334 mat=    0 mach=   0
+SN_gl2_sb49.pdf    kind=rates     pages=  31 rates=  166 res=  150 mat=    0 mach=   0
+SN_gl2_sb5.pdf     kind=rates     pages=  93 rates=  487 res=  508 mat=    0 mach=   0
+SN_gl2_sb50.pdf    kind=rates     pages= 125 rates=  714 res=  819 mat=    0 mach=   0
+SN_gl2_sb6.pdf     kind=rates     pages= 126 rates=  770 res=  468 mat=    0 mach=   0
+SN_gl2_sb8.pdf     kind=rates     pages=  92 rates=  788 res=  744 mat=    0 mach=   0
+SN_gl2_sb9.pdf     kind=rates     pages= 195 rates= 1363 res= 1175 mat=    0 mach=   0
+SN_gl3_sb1.pdf     kind=rates     pages= 162 rates=  667 res=  544 mat=    0 mach=   0
+SN_gl3_sb3.pdf     kind=rates     pages=  13 rates=   32 res=   23 mat=    0 mach=   0
+SN_gl4_sb1.pdf     kind=rates     pages= 115 rates=  400 res=  438 mat=    0 mach=   0
+SN_gl4_sb2.pdf     kind=rates     pages= 140 rates=  719 res=  701 mat=    0 mach=   0
+SN_gl5_sb1.pdf     kind=rates     pages=  22 rates=   61 res=   72 mat=    0 mach=   0
+SN_gl5_sb2.pdf     kind=rates     pages=   8 rates=   28 res=   28 mat=    0 mach=   0
+SN_gl5_sb3.pdf     kind=rates     pages= 133 rates=  621 res=  621 mat=    0 mach=   0
+SN_gl5_sb4.pdf     kind=rates     pages= 110 rates=  688 res=  621 mat=    0 mach=   0
+SN_gl5_sb5.pdf     kind=rates     pages= 121 rates=  531 res=  552 mat=    0 mach=   0
+SN_gl5_sb6.pdf     kind=rates     pages=  33 rates=  163 res=  100 mat=    0 mach=   0
+SN_gl6_sb2.pdf     kind=rates     pages= 174 rates= 1641 res=    0 mat=    0 mach=   0
+SN_gl6_sb3.pdf     kind=rates     pages= 134 rates= 1107 res=    0 mat=    0 mach=   0
+SN_gl6_sb4.pdf     kind=rates     pages=  44 rates=  379 res=    0 mat=    0 mach=   0
+SN_gl6_sb5.pdf     kind=rates     pages=  18 rates=   39 res=    0 mat=    0 mach=   0
+SN_gl6_sb6.pdf     kind=rates     pages=  29 rates=   64 res=    0 mat=    0 mach=   0
+SN_gl7_sb1.pdf     kind=rates     pages=  12 rates=   24 res=   18 mat=    0 mach=   0
+SN_gl7_sb2.pdf     kind=rates     pages=   9 rates=   26 res=   24 mat=    0 mach=   0
+SN_gl7_sb3.pdf     kind=rates     pages=  19 rates=   64 res=   36 mat=    0 mach=   0
+SN_gl7_sb7.pdf     kind=rates     pages=  14 rates=   56 res=   36 mat=    0 mach=   0
+sn21.pdf           kind=materials pages=   3 rates=    0 res=    0 mat=    0 mach=   0
+sn21_1.pdf         kind=materials pages= 121 rates=    0 res=    0 mat= 2699 mach=   0
+sn21_10.pdf        kind=materials pages=   3 rates=    0 res=    0 mat=   54 mach=   0
+sn21_11.pdf        kind=materials pages=  13 rates=    0 res=    0 mat=  387 mach=   0
+sn21_12.pdf        kind=materials pages=  42 rates=    0 res=    0 mat= 1272 mach=   0
+sn21_13.pdf        kind=materials pages=  14 rates=    0 res=    0 mat=  334 mach=   0
+sn21_14.pdf        kind=materials pages=   3 rates=    0 res=    0 mat=   60 mach=   0
+sn21_15.pdf        kind=materials pages=   4 rates=    0 res=    0 mat=  117 mach=   0
+sn21_17.pdf        kind=materials pages=   9 rates=    0 res=    0 mat=  169 mach=   0
+sn21_18.pdf        kind=materials pages=  17 rates=    0 res=    0 mat=  518 mach=   0
+sn21_19.pdf        kind=materials pages=  18 rates=    0 res=    0 mat=  545 mach=   0
+sn21_2.pdf         kind=materials pages=   1 rates=    0 res=    0 mat=   17 mach=   0
+sn21_20.pdf        kind=materials pages=   3 rates=    0 res=    0 mat=   51 mach=   0
+sn21_21.pdf        kind=materials pages=  17 rates=    0 res=    0 mat=  401 mach=   0
+sn21_22.pdf        kind=materials pages=   9 rates=    0 res=    0 mat=  161 mach=   0
+sn21_23.pdf        kind=materials pages=  25 rates=    0 res=    0 mat=  829 mach=   0
+sn21_24.pdf        kind=materials pages=   4 rates=    0 res=    0 mat=   46 mach=   0
+sn21_26.pdf        kind=materials pages=   5 rates=    0 res=    0 mat=  103 mach=   0
+sn21_3.pdf         kind=materials pages=  17 rates=    0 res=    0 mat=  399 mach=   0
+sn21_33.pdf        kind=materials pages=   8 rates=    0 res=    0 mat=  212 mach=   0
+sn21_4.pdf         kind=materials pages=  15 rates=    0 res=    0 mat=  490 mach=   0
+sn21_5.pdf         kind=materials pages=  10 rates=    0 res=    0 mat=  217 mach=   0
+sn21_6.pdf         kind=materials pages=   7 rates=    0 res=    0 mat=  106 mach=   0
+sn21_7.pdf         kind=materials pages=  26 rates=    0 res=    0 mat=  578 mach=   0
+sn21_8.pdf         kind=materials pages=   4 rates=    0 res=    0 mat=   70 mach=   0
+sn21_9.pdf         kind=materials pages=  18 rates=    0 res=    0 mat=  333 mach=   0
+sn_22.pdf          kind=machines  pages=  46 rates=    0 res=    0 mat=    0 mach= 866
+{
+  "documents": 97,
+  "rates": 33721,
+  "rates_with_price": 33369,
+  "resources": 25877,
+  "materials": 10168,
+  "machines": 866,
+  "pages": 6379
+}

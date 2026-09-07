@@ -2,6 +2,7 @@
 __pycache__/
 *.pyc
 .DS_Store
+.env
 
 # Собранные базы: публикуются в GitHub Releases, в git не хранятся
 data/db/

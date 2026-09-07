@@ -1,7 +1,6 @@
-"""Build a SQLite database from the official SN-2012 chapter PDFs."""
+"""Build SQLite database from official SN-2012 (01.07.2026) PDFs."""
 from __future__ import annotations
 
-import argparse
 import json
 import re
 import sqlite3
@@ -10,10 +9,10 @@ from pathlib import Path
 
 import fitz
 
-import mosru
-
-ROOT = mosru.ROOT
-MIN_RATES = 20000
+ROOT = Path(__file__).resolve().parents[1]
+PDF_DIR = ROOT / "data" / "raw" / "pdf"
+MANIFEST = ROOT / "data" / "raw" / "manifest.json"
+MIN_RATES = 30000  # предохранитель: меньше — значит разбор сломался, старую базу не трогаем
 
 RATE_CODE = re.compile(r"^\d{1,2}-\d{4}-\d+-\d+(?:/\d+)?$")
 RES_CODE = re.compile(r"^\d+\.\d+(?:-\d+)+$")
@@ -22,6 +21,13 @@ OKP = re.compile(r"^\d{8,12}$")
 OKPD2 = re.compile(r"^\d{2}\.\d{2}")
 TABLE_RE = re.compile(r"Таблица\s+([0-9]+(?:-[0-9]+)*)\.?\s*(.*)$", re.I)
 NUM_TOKEN = re.compile(r"^(?:[-–—]|-?\d{1,3}(?:[ \u00a0]?\d{3})*(?:,\d+)?|-?\d+(?:,\d+)?)$")
+NAME_WORD = re.compile(r"[А-Яа-яЁёA-Za-z]")
+# Шапка таблицы ресурсов и подобные служебные строки — не часть названия расценки.
+SERVICE_LINE = re.compile(
+    r"Ресурсы,\s*учтенные|Шифр\s+Позиция|Наименование\s+ресурсов|"
+    r"ценника\s+измерения|Норма\s+расхода|Единица\s+измерения",
+    re.I,
+)
 HEADER_NOISE = {
     "шифр",
     "наименование",
@@ -85,6 +91,23 @@ def row_tokens(row: list[tuple[float, float, str]]) -> list[str]:
     return [t[2] for t in row]
 
 
+def nums_start_x(row: list[tuple[float, float, str]], tokens: list[str]) -> float:
+    """x-координата первой цифровой колонки строки; названию дальше нельзя."""
+    i = len(tokens)
+    while i > 0 and is_num(tokens[i - 1]):
+        i -= 1
+    return row[i][0] if i < len(tokens) else float("inf")
+
+
+def clean_name(name: str) -> str:
+    return re.sub(r"\s+", " ", name).strip(" ;")
+
+
+def is_header_noise(name: str) -> bool:
+    words = name.split()
+    return bool(words) and all(w.lower().strip(".,") in HEADER_NOISE for w in words)
+
+
 @dataclass
 class Ctx:
     department: str = ""
@@ -96,6 +119,9 @@ class Ctx:
     group_header: str = ""
     collecting_composition: bool = False
     pending_rate: dict | None = None
+    last_rate: dict | None = None
+    last_rate_x: float = 0.0
+    name_limit_x: float = float("inf")
     rates: list[dict] = field(default_factory=list)
     resources: list[dict] = field(default_factory=list)
     materials: list[dict] = field(default_factory=list)
@@ -108,20 +134,23 @@ def flush_pending(ctx: Ctx) -> None:
         if ctx.pending_rate.get("name") or ctx.pending_rate.get("direct_cost") is not None:
             ctx.rates.append(ctx.pending_rate)
     ctx.pending_rate = None
+    ctx.last_rate = None
+
+
+NUMERIC_KEYS = (
+    "direct_cost",
+    "wages",
+    "machines_total",
+    "machines_wages",
+    "materials",
+    "labor_hours",
+    "mass_t",
+    "volume_m3",
+)
 
 
 def attach_numbers(rate: dict, nums: list[float | None]) -> None:
-    keys = [
-        "direct_cost",
-        "wages",
-        "machines_total",
-        "machines_wages",
-        "materials",
-        "labor_hours",
-        "mass_t",
-        "volume_m3",
-    ]
-    for key, val in zip(keys, nums):
+    for key, val in zip(NUMERIC_KEYS, nums):
         rate[key] = val
 
 
@@ -160,6 +189,10 @@ def handle_context(ctx: Ctx, text: str) -> bool:
         ctx.unit = ""
         ctx.collecting_composition = False
         return True
+    if SERVICE_LINE.search(t):
+        flush_pending(ctx)
+        ctx.collecting_composition = False
+        return True
     if t.startswith("Состав работ"):
         ctx.composition = t.split(":", 1)[-1].strip()
         ctx.collecting_composition = True
@@ -180,9 +213,11 @@ def handle_context(ctx: Ctx, text: str) -> bool:
     return False
 
 
-def parse_rate_row(ctx: Ctx, tokens: list[str]) -> bool:
+def parse_rate_row(ctx: Ctx, row: list[tuple[float, float, str]]) -> bool:
+    tokens = row_tokens(row)
     if not tokens:
         return False
+    x0 = row[0][0]
     code = tokens[0]
     if not RATE_CODE.match(code):
         if ctx.pending_rate:
@@ -193,8 +228,21 @@ def parse_rate_row(ctx: Ctx, tokens: list[str]) -> bool:
                     ctx.pending_rate["name"] = ((ctx.pending_rate.get("name") or "") + " " + name).strip()
                 flush_pending(ctx)
                 return True
-            if name and not all(w.lower().strip(".,") in HEADER_NOISE for w in name.split()):
+            if name and not is_header_noise(name):
                 ctx.pending_rate["name"] = (ctx.pending_rate.get("name", "") + " " + name).strip()
+                return True
+        # Продолжение длинного названия: строка с отступом в колонке «Наименование»,
+        # без шифра и без цифровых колонок. В PDF такие переносы — обычное дело.
+        if ctx.last_rate is not None and x0 > ctx.last_rate_x + 10 and x0 < ctx.name_limit_x - 10:
+            tail, nums = split_name_and_nums(tokens)
+            if (
+                not nums
+                and NAME_WORD.search(tail)
+                and not is_header_noise(tail)
+                and not SERVICE_LINE.search(tail)
+                and len(ctx.last_rate.get("name") or "") < 400
+            ):
+                ctx.last_rate["name"] = clean_name((ctx.last_rate.get("name") or "") + " " + tail)
                 return True
         return False
 
@@ -239,6 +287,9 @@ def parse_rate_row(ctx: Ctx, tokens: list[str]) -> bool:
         attach_numbers(rate, nums)
         ctx.rates.append(rate)
         ctx.pending_rate = None
+        ctx.last_rate = rate
+        ctx.last_rate_x = x0
+        ctx.name_limit_x = nums_start_x(row[1:], rest)
     else:
         ctx.pending_rate = rate
     return True
@@ -334,16 +385,16 @@ def parse_pdf(path: Path, kind: str) -> Ctx:
         ctx.texts.append((page_index + 1, text))
         rows = cluster_rows(page)
         for row in rows:
-            tokens = row_tokens(row)
             text_row = row_text(row)
             if handle_context(ctx, text_row):
+                ctx.last_rate = None
                 continue
             if kind == "rates":
-                parse_rate_row(ctx, tokens)
+                parse_rate_row(ctx, row)
             elif kind == "materials":
-                parse_material_or_machine(ctx, tokens, "material")
+                parse_material_or_machine(ctx, row_tokens(row), "material")
             elif kind == "machines":
-                parse_material_or_machine(ctx, tokens, "machine")
+                parse_material_or_machine(ctx, row_tokens(row), "machine")
     flush_pending(ctx)
     return ctx
 
@@ -485,21 +536,21 @@ def init_db(conn: sqlite3.Connection) -> None:
     )
 
 
-def main() -> int:
-    mosru.use_utf8_stdout()
-    parser = argparse.ArgumentParser(description="Собрать SQLite из PDF сборника СН-2012")
-    parser.add_argument("--manifest", type=Path, default=mosru.MANIFEST)
-    parser.add_argument("--pdf-dir", type=Path, default=mosru.PDF_DIR)
-    parser.add_argument("--out", type=Path, help="Куда писать базу (по умолчанию data/db/sn2012_<дата>.sqlite)")
-    args = parser.parse_args()
+def db_path_for(price_level: str | None) -> Path:
+    """data/db/sn2012_2026-07-01.sqlite — уровень цен прямо в имени файла."""
+    if not price_level:
+        return ROOT / "data" / "db" / "sn2012.sqlite"
+    day, month, year = price_level.split(".")
+    return ROOT / "data" / "db" / f"sn2012_{year}-{month}-{day}.sqlite"
 
-    manifest = json.loads(args.manifest.read_text(encoding="utf-8"))
-    price_level = manifest.get("price_level") or "01.01.1970"
-    db_path = args.out or mosru.db_path_for(price_level)
+
+def main() -> None:
+    manifest = json.loads(MANIFEST.read_text(encoding="utf-8"))
+    db_path = db_path_for(manifest.get("price_level"))
     tmp_path = db_path.with_suffix(".sqlite.tmp")
     db_path.parent.mkdir(parents=True, exist_ok=True)
-    tmp_path.unlink(missing_ok=True)
-    print(f"Сборка базы для уровня цен {price_level} → {db_path.name}")
+    for leftover in (tmp_path, tmp_path.with_name(tmp_path.name + "-wal"), tmp_path.with_name(tmp_path.name + "-shm")):
+        leftover.unlink(missing_ok=True)
     conn = sqlite3.connect(tmp_path)
     init_db(conn)
     conn.execute("INSERT INTO meta(key,value) VALUES(?,?)", ("title", manifest.get("title")))
@@ -532,7 +583,7 @@ def main() -> int:
             ),
         )
         doc_id = cur.lastrowid
-        path = args.pdf_dir / filename
+        path = ROOT / item["rel_path"]
         if not path.exists():
             stats.append(f"MISSING {filename}")
             continue
@@ -543,8 +594,13 @@ def main() -> int:
         )
         cleaned_rates = []
         leftover_resources = []
+        dropped_empty = 0
         for r in ctx.rates:
             name = (r.get("name") or "").strip()
+            if all(r.get(k) is None for k in NUMERIC_KEYS):
+                # Обрывки технической части, случайно похожие на расценку: цены нет — пользы нет.
+                dropped_empty += 1
+                continue
             if r.get("direct_cost") is None and re.match(r"^\d{8,}", name):
                 parts = name.split()
                 leftover_resources.append(
@@ -570,7 +626,7 @@ def main() -> int:
                     coll_code,
                     f"{coll_code}:{r['code']}" if coll_code else r["code"],
                     r["code"],
-                    r.get("name"),
+                    clean_name(r.get("name") or ""),
                     r.get("unit"),
                     r.get("table_code"),
                     r.get("table_name"),
@@ -655,22 +711,25 @@ def main() -> int:
         "pages": conn.execute("SELECT count(*) FROM pages").fetchone()[0],
     }
     conn.execute("INSERT INTO meta(key,value) VALUES(?,?)", ("counts", json.dumps(counts, ensure_ascii=False)))
+    conn.execute("PRAGMA journal_mode = DELETE")
     conn.commit()
     conn.close()
-
-    mosru.REPORTS.mkdir(parents=True, exist_ok=True)
-    (mosru.REPORTS / "parse_stats.txt").write_text(
-        "\n".join(stats) + "\n" + json.dumps(counts, ensure_ascii=False, indent=2),
-        encoding="utf-8",
-    )
-    if counts["rates"] < MIN_RATES:
-        print(f"Разобрано только {counts['rates']} расценок (ожидалось ≥ {MIN_RATES}). База не заменена.")
-        return 2
+    if counts["rates_with_price"] < MIN_RATES:
+        raise SystemExit(
+            f"Расценок с ценой всего {counts['rates_with_price']}, ожидалось не меньше {MIN_RATES}. "
+            f"База не заменена, черновик остался в {tmp_path.name}"
+        )
+    if db_path.exists():
+        backup = db_path.with_suffix(".sqlite.bak")
+        backup.unlink(missing_ok=True)
+        db_path.replace(backup)
+        print(f"Прежняя база сохранена как {backup.name}")
     tmp_path.replace(db_path)
-    print(f"База готова: {db_path}")
-    print(json.dumps(counts, ensure_ascii=False, indent=2))
-    return 0
+    (ROOT / "data" / "parse_stats.txt").write_text(
+        "\n".join(stats) + "\n" + json.dumps(counts, ensure_ascii=False, indent=2), encoding="utf-8"
+    )
+    print("DB", db_path, counts)
 
 
 if __name__ == "__main__":
-    raise SystemExit(main())
+    main()

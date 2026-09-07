@@ -2,18 +2,26 @@
 from __future__ import annotations
 
 import argparse
+import re
 import sqlite3
 from pathlib import Path
 
-import mosru
+ROOT = Path(__file__).resolve().parents[1]
+DB_DIR = ROOT / "data" / "db"
 
 
 def newest_db() -> Path | None:
-    candidates = sorted(mosru.DB_DIR.glob("sn2012_*.sqlite"))
-    return candidates[-1] if candidates else None
+    candidates = sorted(DB_DIR.glob("sn2012_*.sqlite"))
+    if candidates:
+        return candidates[-1]
+    legacy = ROOT / "data" / "sn2012_2026.sqlite"
+    return legacy if legacy.exists() else None
 
 
-def connect(db: Path) -> sqlite3.Connection:
+def connect() -> sqlite3.Connection:
+    db = newest_db()
+    if db is None or not db.exists():
+        raise FileNotFoundError("Базы нет. Соберите её: python scripts/build_db.py")
     conn = sqlite3.connect(db)
     conn.row_factory = sqlite3.Row
     return conn
@@ -25,9 +33,43 @@ def fmt_money(value: float | None) -> str:
     return f"{value:,.2f}".replace(",", " ")
 
 
-def search_rates(conn: sqlite3.Connection, query: str, limit: int) -> None:
-    like = f"%{query}%"
-    fts = " ".join(f"{part}*" for part in query.split() if part)
+def fetch_rate(conn: sqlite3.Connection, full_code: str) -> sqlite3.Row | None:
+    return conn.execute(
+        """
+        SELECT full_code, name, unit, wages, machines_total, machines_wages, materials, labor_hours
+        FROM rates WHERE full_code = ?
+        """,
+        (full_code,),
+    ).fetchone()
+
+
+STOPWORDS = {
+    "или", "при", "над", "под", "для", "это", "как", "что", "чтобы", "надо",
+    "нужно", "сделать", "сделай", "смета", "сметы", "пожалуйста", "мне", "нам",
+    "хочу", "составить", "посчитай", "посчитать", "только", "работа", "работы",
+    "штук", "метр", "метра", "метров", "кв", "куб", "около", "примерно", "весь",
+    "вся", "все", "там", "тут", "есть", "нет", "уже", "ещё", "еще", "надо",
+}
+
+
+def stems(query: str) -> list[str]:
+    """Основы слов: в сборнике «сосулек», а спрашивают «сосульки» — ищем по началу слова."""
+    out: list[str] = []
+    for word in re.findall(r"[0-9A-Za-zА-Яа-яЁё]+", query):
+        low = word.lower().replace("ё", "е")
+        if len(low) < 3 or low.isdigit() or low in STOPWORDS:
+            continue
+        stem = low if len(low) <= 4 else low[: max(4, len(low) - 3)]
+        if stem not in out:
+            out.append(stem)
+    return out
+
+
+def fetch_rates(conn: sqlite3.Connection, query: str, limit: int) -> list[sqlite3.Row]:
+    parts = stems(query)
+    if not parts:
+        return []
+    fts = " OR ".join(f"{part}*" for part in parts)
     try:
         rows = conn.execute(
             """
@@ -35,7 +77,7 @@ def search_rates(conn: sqlite3.Connection, query: str, limit: int) -> None:
             FROM rates_fts f
             JOIN rates r ON r.id = f.rowid
             WHERE rates_fts MATCH ?
-            ORDER BY (r.direct_cost IS NULL), r.full_code
+            ORDER BY f.rank, (r.direct_cost IS NULL)
             LIMIT ?
             """,
             (fts, limit),
@@ -43,16 +85,25 @@ def search_rates(conn: sqlite3.Connection, query: str, limit: int) -> None:
     except sqlite3.OperationalError:
         rows = []
     if not rows:
+        where = " OR ".join(["name LIKE ?", "table_name LIKE ?", "full_code LIKE ?"] * len(parts))
+        params: list[str] = []
+        for part in parts:
+            params += [f"%{part}%"] * 3
         rows = conn.execute(
-            """
+            f"""
             SELECT full_code, name, unit, direct_cost, wages, labor_hours, table_name
             FROM rates
-            WHERE full_code LIKE ? OR code LIKE ? OR name LIKE ? OR table_name LIKE ?
+            WHERE {where}
             ORDER BY (direct_cost IS NULL), full_code
             LIMIT ?
             """,
-            (like, like, like, like, limit),
+            (*params, limit),
         ).fetchall()
+    return rows
+
+
+def search_rates(conn: sqlite3.Connection, query: str, limit: int) -> None:
+    rows = fetch_rates(conn, query, limit)
     print(f"Расценки: {len(rows)}")
     for r in rows:
         print(
@@ -101,31 +152,20 @@ def search_machines(conn: sqlite3.Connection, query: str, limit: int) -> None:
         )
 
 
-def main() -> int:
-    mosru.use_utf8_stdout()
+def main() -> None:
     parser = argparse.ArgumentParser(description="Поиск по базе СН-2012")
     parser.add_argument("query")
     parser.add_argument("--kind", choices=["rates", "materials", "machines", "all"], default="rates")
     parser.add_argument("--limit", type=int, default=20)
-    parser.add_argument("--db", type=Path, help="Конкретная база (по умолчанию самая свежая в data/db)")
     args = parser.parse_args()
-
-    db = args.db or newest_db()
-    if db is None or not db.exists():
-        print("Базы нет. Соберите её: python scripts/build_db.py")
-        return 2
-
-    conn = connect(db)
-    level = conn.execute("SELECT value FROM meta WHERE key='price_level'").fetchone()
-    print(f"База: {db.name} (уровень цен {level[0] if level else '?'})\n")
+    conn = connect()
     if args.kind in {"rates", "all"}:
         search_rates(conn, args.query, args.limit)
     if args.kind in {"materials", "all"}:
         search_materials(conn, args.query, args.limit)
     if args.kind in {"machines", "all"}:
         search_machines(conn, args.query, args.limit)
-    return 0
 
 
 if __name__ == "__main__":
-    raise SystemExit(main())
+    main()
